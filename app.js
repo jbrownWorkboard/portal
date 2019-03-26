@@ -61,7 +61,7 @@ app.use(indexRoutes);
 
 //for Heroku
 app.listen(process.env.PORT, function() {
-    console.log("Portal Server Started on Heroku");
+    console.log("Portal Server Started on " + process.env.PORT);
 });
 
 //for localhost

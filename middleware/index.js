@@ -10,10 +10,10 @@ middlewareObj.isLoggedIn = function (req, res, next) {
 }
 
 middlewareObj.isAdmin = function (req, res, next) {
-    if (typeof(req.user) != 'undefined' && req.user.userlevel == "Administrator") {
+    if (typeof(req.user) != 'undefined' && req.user.userLevel == "Administrator") {
         return next();
     }
-    req.flash("error", "You must be an administrator to do that.");
+    req.flash("error", "You must be an administrator to do that. Current User Level: " + req.user.userLevel);
     res.redirect("/");
 }
 

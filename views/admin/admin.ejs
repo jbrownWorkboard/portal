@@ -9,7 +9,7 @@
             <a href="/campgrounds" class="btn btn-md btn-primary btn-block">View all campgrounds</a>
         </div> -->
         <div class="col-md-6">
-            <% if (typeof(currentUser) != 'undefined' && currentUser.userlevel == "Administrator") { %>
+            <% if (typeof(currentUser) != 'undefined' && currentUser.userLevel == "Administrator") { %>
                 <a href="/register" class="btn btn-md btn-primary btn-block">Register</a>
             <% } %>
         </div>        
@@ -25,7 +25,7 @@
                     <h4><strong>Current User:</strong> <%= currentUser.username %></h4>
             </div>
             <div class="col-md-6">
-                <h4><strong>User Type:</strong> <%= currentUser.userlevel %></h4>
+                <h4><strong>User Type:</strong> <%= currentUser.userLevel %></h4>
             </div>
             <% } %>        
         </div>
@@ -33,7 +33,7 @@
     <hr>
     <div class="row">
         <div class="col-md-12">
-            <% if (typeof(registeredUsers) != 'undefined' && currentUser.userlevel == "Administrator") { %>
+            <% if (typeof(registeredUsers) != 'undefined' && currentUser.userLevel == "Administrator") { %>
                 <h3 style="margin-top: 0px">Registered Users:</h3>
             <% } %>
         </div>
@@ -48,7 +48,7 @@
                     <h4 id="delete-buttons" class="vertical-align:10em"><strong>Username:</strong><%= user.username %></h4>
                 </div>
                 <div class="col-md-6" >
-                    <h4 id="delete-buttons"><strong>User Type:</strong><%=user.userlevel%></h4>
+                    <h4 id="delete-buttons"><strong>User Type:</strong><%=user.userLevel%></h4>
                 </div>                 
             </form>
             <hr>

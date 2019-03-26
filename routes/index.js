@@ -80,13 +80,13 @@ router.post("/login", passport.authenticate("local", {
 
 //add 'isAdmin' middleware to limit registration to administrators.
 router.post("/register", function(req, res) {
-    User.register(new User({ username: req.body.username, userlevel: req.body.userlevel }), req.body.password, function(err, user) {
+    User.register(new User({ username: req.body.username, userLevel: req.body.userlevel }), req.body.password, function(err, user) {
         if (err) {
             req.flash("error", err.message);
             res.redirect('/register');
         }
         passport.authenticate("local")(req, res, function() {
-            req.flash("success", "Welcome to your Portal, " + user.username + "!");
+            req.flash("success", "Welcome to your Portal, " + user.username + "!" + " Your account level is: " + user.userLevel);
             res.redirect("/portal");
         });
     });

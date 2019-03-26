@@ -22,9 +22,9 @@
                     <li><a href="/login">Login</a></li>
                     <li><a href="/register">Signup</a></li>
                 <% } else { %>
-                    <li><a href="#">Logged in as: <strong><%= currentUser.username %></strong></a></li>
+                    <li><a class="padding-right: 0px" href="#">Logged in as: <strong><%= currentUser.username %></strong> (<%= currentUser.userLevel %>)</a></li>
                 <% } %>
-                <% if (typeof(currentUser) != 'undefined' && currentUser.userlevel == 'Administrator') { %>
+                <% if (typeof(currentUser) != 'undefined' && currentUser.userLevel == 'Administrator') { %>
                     <a style="padding: 4px 12px; margin-top: .8em" href="/admin" class="btn btn-sm btn-danger">Admin panel</a>
                 <% } %>
                 <li><a href="/logout">Logout</a></li>
