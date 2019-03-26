@@ -60,11 +60,11 @@ passport.deserializeUser(User.deserializeUser());
 app.use(indexRoutes);
 
 //for Heroku
-// app.listen(process.env.PORT, function() {
-//     console.log("Portal Server Started on Heroku");
-// });
+app.listen(process.env.PORT, function() {
+    console.log("Portal Server Started on Heroku");
+});
 
 //for localhost
-app.listen(3000, 'localhost', function() {
-    console.log("Portal Server Started on Localhost");
-});
+// app.listen(3000, 'localhost', function() {
+//     console.log("Portal Server Started on Localhost");
+// });
