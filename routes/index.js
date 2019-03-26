@@ -4,7 +4,7 @@ var User            = require("../models/user");
 var middleware      = require("../middleware/")
 var router          = express.Router();
 
-{//RESTFUL ROUTES: TABLE OF CONTENTS
+//RESTFUL ROUTES: TABLE OF CONTENTS
 //name      url                 verb    description
 //=======================================================================================
 //INDEX     /campgrounds        GET     display list of all campgrounds.
@@ -15,7 +15,7 @@ var router          = express.Router();
 //NESTED ROUTES: So you can associate comments with the particular campground it is related to!!
 //NEW       /campgrounds/:id/comments/new   GET
 //CREATE    /campgrounds/:id/comments       POST
-} //ROUTE GUIDE
+//ROUTE GUIDE
 
 //Root Route
 router.get("/", function(req, res) {
