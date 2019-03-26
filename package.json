@@ -28,11 +28,11 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jbrownEsri/portal.git"
+    "url": "git+https://github.com/jbrownWorkboard/portal.git"
   },
   "bugs": {
-    "url": "https://github.com/jbrownEsri/portal/issues"
+    "url": "https://github.com/jbrownWorkboard/portal/issues"
   },
-  "homepage": "https://github.com/jbrownEsri/portal#readme",
+  "homepage": "https://github.com/jbrownWorkboard/portal#readme",
   "description": ""
 }
