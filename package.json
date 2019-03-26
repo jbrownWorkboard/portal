@@ -1,24 +1,25 @@
 {
   "name": "portal",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
+  "author": "Josh Brown",
+  "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
     "connect-flash": "^0.1.1",
-    "express": "^4.16.4",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
     "express-session": "^1.15.6",
     "jquery": "^3.3.1",
     "locus": "file:locus-master",
-    "flash": "^1.1.0",
-    "ejs": "^2.6.1",
-    "method-override": "^3.0.0",
-    "mongoose": "^5.4.19",
+    "method-override": "^2.3.10",
+    "moment": "^2.22.2",
     "mongodb": "^3.1.1",
-    "moment": "^2.24.0",
+    "mongoose": "^5.1.2",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^5.0.1",
@@ -27,12 +28,11 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jbrownWorkboard/portal.git"
+    "url": "git+https://github.com/jbrownEsri/portal.git"
   },
-  "author": "Josh Brown",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jbrownWorkboard/portal/issues"
+    "url": "https://github.com/jbrownEsri/portal/issues"
   },
-  "homepage": "https://github.com/jbrownWorkboard/portal#readme"
+  "homepage": "https://github.com/jbrownEsri/portal#readme",
+  "description": ""
 }
